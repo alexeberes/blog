@@ -1,0 +1,12 @@
+---
+layout: page
+permalink: /book-reviews/
+title: Book Reviews
+---
+
+
+<div id="archives">
+{% for post in site.categories.book-reviews %}
+    <li><span>{{ post.date | date_to_string }}</span> &nbsp; <a href="\blog\{{ post.url }}">{{ post.title }}</a></li>
+{% endfor %}
+</div>

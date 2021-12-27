@@ -32,7 +32,7 @@ instagram_username: alexeberes
 linkedin_username:  alexeberes
 
 # Build settings
-remote_theme: wowthemesnet/mediumish-theme-jekyll
+theme: minima
 plugins:
   - jekyll-feed
 

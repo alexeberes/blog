@@ -192,14 +192,16 @@
   margin-left: 0;
   list-style: none;
 
+    border-radius: 10px;
+
+  & :hover{
+    border-radius: 0px;
+    background-color: rgb(245,245,245);
+  }
+
   > li {
     margin-bottom: $spacing-unit;
-    background-color: aqua;
-    border-color: red;
-    border-radius: 10px;
-    border-width: 5px;
-    box-shadow: 5px 5px blueviolet;
-    border-style: solid;
+    border-style: none;
   }
   
 }

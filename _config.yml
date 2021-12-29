@@ -32,9 +32,10 @@ instagram_username: alexeberes
 linkedin_username:  alexeberes
 
 # Build settings
-theme: minima
+# theme: minima
 plugins:
   - jekyll-feed
+show_excerpts: true
 
 # Exclude from processing.
 # The following items will not be processed, by default.

@@ -194,14 +194,41 @@
 
     border-radius: 10px;
 
-  & :hover{
-    border-radius: 0px;
-    background-color: rgb(245,245,245);
-  }
-
   > li {
     margin-bottom: $spacing-unit;
-    border-style: none;
+    border-style: solid;
+    border-width: 2px 0px 0px 0px;
+    border-color: lightgray;
+  }
+
+  .post-link {
+    color: $brand-color;
+    font-weight: 600;
+
+    &:hover {
+      text-decoration: none;
+      color: lighten($brand-color, 15%);
+    }
+  }
+
+  .post-category {
+    color: $contrast-brand-color;
+    border-width: 2px;
+    border-style: solid;
+    margin-right: 3px;
+    padding: 2px;
+    border-radius: 3px;
+    &:hover {
+      text-decoration: none;
+      color: lighten($contrast-brand-color, 15%);
+    }
+  }
+
+  .post-excerpt {
+    color: $text-color;
+    &:hover {
+      color: lighten($text-color, 15%);
+    }
   }
   
 }

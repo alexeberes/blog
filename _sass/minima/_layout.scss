@@ -188,6 +188,7 @@
   @include relative-font-size(1.75);
 }
 
+
 .post-list {
   margin-left: 0;
   list-style: none;
@@ -202,17 +203,17 @@
   }
 
   .post-link {
-    color: $brand-color;
+    color: $text-color;
     font-weight: 600;
 
     &:hover {
       text-decoration: none;
-      color: lighten($brand-color, 15%);
+      color: lighten($text-color, 45%);
     }
   }
 
   .post-category {
-    color: $contrast-brand-color;
+    color: $primary-color;
     border-width: 2px;
     border-style: solid;
     margin-right: 3px;
@@ -220,14 +221,14 @@
     border-radius: 3px;
     &:hover {
       text-decoration: none;
-      color: lighten($contrast-brand-color, 15%);
+      color: lighten($text-color, 45%);
     }
   }
 
   .post-excerpt {
     color: $text-color;
     &:hover {
-      color: lighten($text-color, 15%);
+      color: lighten($text-color, 45%);
     }
   }
   

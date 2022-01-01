@@ -23,7 +23,8 @@ layout: default
         <span class="post-meta">{{ post.date | date: date_format }}</span></p>
         {%- if site.show_excerpts -%}
           <a class="post-excerpt" href="{{ post.url | relative_url }}">
-            {{ post.excerpt }}
+            {% assign excerptParts = post.excerpt | split: "<!--more-->" %}
+            {{ excerptParts[0] | strip_newlines | truncatewords: 50 }}... Read More
           </a>
         {%- endif -%}
         {%- for category in post.categories -%}

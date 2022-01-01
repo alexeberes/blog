@@ -22,9 +22,10 @@ layout: default
         <p>{%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
         <span class="post-meta">{{ post.date | date: date_format }}</span></p>
         {%- if site.show_excerpts -%}
-          <a class="post-excerpt" href="{{ post.url | relative_url }}">
-            {{ post.excerpt }}
-          </a>
+            <a class="post-excerpt" href="{{ post.url | relative_url }}">
+                {% assign excerptParts = post.excerpt | split: "<!--more-->" %}
+                {{ excerptParts[0] | strip_newlines | truncatewords: 50 }}... Read More
+            </a>
         {%- endif -%}
         {%- for category in post.categories -%}
           <a class="post-category" href="{{ site.url }}{{ site.baseurl }}/{{ category }}">
